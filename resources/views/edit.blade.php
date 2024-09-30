@@ -6,7 +6,7 @@
     @method('PATCH')
     {{-- <input hidden value={{$employs->id}}> --}}
     <div>
-        <label for="name">name</label>
+        <label >name</label>
         <input type="text" name="name" id="name" class="form-control" value="{{$employs->name}}">        
         <div>{{$errors->first('name')}}</div>
     </div>
@@ -34,7 +34,7 @@
     </div>
     <div>   
         <label for="mobile_no">mobile_no</label>
-        <input type="text" name="mobile_no" id="mobile_no" class="form-control" value="{{$employs->mobile_no}}" >
+        <input type="string" name="mobile_no" id="mobile_no" class="form-control" value="{{$employs->mobile_no}}" >
         <div class="invalid-feedbacks">{{$errors->first('mobile_no')}}</div>
     </div>
     <div>
